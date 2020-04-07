@@ -134,15 +134,15 @@ Download_aria2_conf(){
     [[ ! -s "aria2.conf" ]] && echo -e "${Error} Aria2 配置文件下载失败 !" && rm -rf "${file}" && exit 1
     wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/autoupload.sh"
     [[ ! -s "autoupload.sh" ]] && echo -e "${Error} 附加功能脚本[autoupload.sh]下载失败 !" && rm -rf "${file}" && exit 1
-    wget -N "https://raw.githubusercontent.com/P3TERX/aria2.conf/master/delete.aria2.sh"
+    wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/delete.aria2.sh"
     [[ ! -s "delete.aria2.sh" ]] && echo -e "${Error} 附加功能脚本[delete.aria2.sh]下载失败 !" && rm -rf "${file}" && exit 1
-    wget -N "https://raw.githubusercontent.com/P3TERX/aria2.conf/master/delete.sh"
+    wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/delete.sh"
     [[ ! -s "delete.sh" ]] && echo -e "${Error} 附加功能脚本[delete.sh]下载失败 !" && rm -rf "${file}" && exit 1
-    wget -N "https://raw.githubusercontent.com/P3TERX/aria2.conf/master/info.sh"
+    wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/info.sh"
     [[ ! -s "info.sh" ]] && echo -e "${Error} 附加功能脚本[info.sh]下载失败 !" && rm -rf "${file}" && exit 1
-    wget -N "https://raw.githubusercontent.com/P3TERX/aria2.conf/master/dht.dat"
+    wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/dht.dat"
     [[ ! -s "dht.dat" ]] && echo -e "${Error} Aria2 DHT（IPv4）文件下载失败 !" && rm -rf "${file}" && exit 1
-    wget -N "https://raw.githubusercontent.com/P3TERX/aria2.conf/master/dht6.dat"
+    wget -N "https://raw.githubusercontent.com/utaki/aria2.conf/master/dht6.dat"
     [[ ! -s "dht6.dat" ]] && echo -e "${Error} Aria2 DHT（IPv6）文件下载失败 !" && rm -rf "${file}" && exit 1
     touch aria2.session
     chmod +x *.sh
